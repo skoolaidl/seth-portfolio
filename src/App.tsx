@@ -1,9 +1,10 @@
 import React from 'react';
+import Navigation from './components/Navigation';
 
 export default function App() {
     return (
         <div>
-            <h1>React from Scratch</h1>
+            <Navigation />
         </div>
     );
 }
