@@ -8,6 +8,16 @@ const theme = createTheme({
         secondary: {
             main: "#CBCBCB"
         }
+    },
+    components: {
+        MuiCssBaseline: {
+            styleOverrides: () => ({
+                body: {
+                    margin: 0,
+                    padding: 0
+                },
+            }),
+        },
     }
 });
 

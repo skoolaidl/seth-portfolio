@@ -4,6 +4,8 @@ import Background from './components/Background/Background';
 
 export default function App() {
     return (
-        <Background/>
+        <Background>
+            <Navigation/>
+        </Background>
     );
 }
