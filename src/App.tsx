@@ -1,9 +1,24 @@
 import React from 'react';
+import Navigation from './components/Navigation';
+import Background from './components/Background/Background';
+
+import { styled } from '@mui/system';
+
+const AppLayer = styled('div')({
+    position: 'relative'
+});
+
+const ContentLayer = styled('div')({
+    position: 'absolute'
+});
 
 export default function App() {
     return (
-        <div>
-            <h1>React from Scratch</h1>
-        </div>
+        <AppLayer>
+            <ContentLayer>
+                <Navigation/>
+            </ContentLayer>
+            <Background/>
+        </AppLayer>    
     );
 }
