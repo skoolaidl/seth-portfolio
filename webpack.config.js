@@ -33,7 +33,29 @@ module.exports = {
             loader: 'file-loader',
           },
         ],
-      }
+      },
+      {
+        test: /\.(scss|css)$/i,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: { modules: true, sourceMap: true },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+        ]
+      },
+      {
+        test: /\.(woff|woff2)$/,
+        use: {
+          loader: 'url-loader',
+        },
+      },
     ],
   },
   resolve: {

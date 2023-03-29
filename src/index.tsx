@@ -10,13 +10,19 @@ import store from './redux/store';
 
 const Portfolio = () => {
     return (
-        <ThemeProvider theme={theme}>
-            <Provider store={store}>
-                <CssBaseline>
-                    <App />
-                </CssBaseline>
-            </Provider>
-        </ThemeProvider>
+        <div>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+                rel="stylesheet"
+            />
+            <ThemeProvider theme={theme}>
+                <Provider store={store}>
+                    <CssBaseline>
+                        <App />
+                    </CssBaseline>
+                </Provider>
+            </ThemeProvider>
+        </div>
     );
 }
 
