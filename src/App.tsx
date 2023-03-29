@@ -9,11 +9,7 @@ const AppLayer = styled('div')({
 });
 
 const ContentLayer = styled('div')({
-    position: 'absolute',
-    width: '100%',
-    height: 'auto',
-    top: 0,
-    left: 0
+    position: 'absolute'
 });
 
 export default function App() {

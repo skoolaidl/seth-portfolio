@@ -1,11 +1,18 @@
 import React from 'react';
+import { Button, Typography } from '@mui/material';
 
 const Navigation = () => {
     return(
         <div>
-            <div>Nav1</div>
-            <div>Nav2</div>
-            <div>Nav3</div>
+            <Button variant='contained'>
+                <Typography variant='body1'>Home</Typography>
+            </Button>
+            <Button variant='contained'>
+                <Typography>About</Typography>
+            </Button>
+            <Button variant='contained'>
+                <Typography>Contact</Typography>
+            </Button>
         </div>
     )
 }

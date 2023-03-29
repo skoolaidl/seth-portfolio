@@ -13,6 +13,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@fontsource/montserrat": "^4.5.14",
     "@mui/material": "^5.11.14",
     "@reduxjs/toolkit": "^1.9.0",
     "@types/jest": "^29.2.3",
